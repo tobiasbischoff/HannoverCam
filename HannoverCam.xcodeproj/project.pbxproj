@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F64346D414EC5D0100D20D9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64346D314EC5D0100D20D9F /* MapKit.framework */; };
+		F64346D814EC5EB800D20D9F /* camDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F64346D714EC5EB800D20D9F /* camDatabase.m */; };
+		F64346DB14EC5FBC00D20D9F /* camPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F64346DA14EC5FBC00D20D9F /* camPoint.m */; };
+		F6444CA514ED5EC700FEA283 /* camViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6444CA314ED5EC700FEA283 /* camViewer.m */; };
+		F6444CA614ED5EC700FEA283 /* camViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6444CA414ED5EC700FEA283 /* camViewer.xib */; };
+		F64F339214EE983F002B7181 /* meldung.m in Sources */ = {isa = PBXBuildFile; fileRef = F64F339114EE983F002B7181 /* meldung.m */; };
+		F64F339514EE98A0002B7181 /* rssParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F64F339414EE98A0002B7181 /* rssParser.m */; };
+		F6701B9C14EBF04F005BB528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6701B9B14EBF04F005BB528 /* UIKit.framework */; };
+		F6701B9E14EBF04F005BB528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6701B9D14EBF04F005BB528 /* Foundation.framework */; };
+		F6701BA014EBF04F005BB528 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6701B9F14EBF04F005BB528 /* CoreGraphics.framework */; };
+		F6701BA614EBF04F005BB528 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6701BA414EBF04F005BB528 /* InfoPlist.strings */; };
+		F6701BA814EBF04F005BB528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6701BA714EBF04F005BB528 /* main.m */; };
+		F6701BAC14EBF04F005BB528 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6701BAB14EBF04F005BB528 /* AppDelegate.m */; };
+		F6701BAF14EBF04F005BB528 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6701BAE14EBF04F005BB528 /* ViewController.m */; };
+		F6701BB214EBF04F005BB528 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6701BB014EBF04F005BB528 /* ViewController.xib */; };
+		F6701BBA14EBF38E005BB528 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6701BB914EBF38E005BB528 /* ListViewController.m */; };
+		F6701BBD14EBF3B0005BB528 /* RSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6701BBC14EBF3B0005BB528 /* RSSViewController.m */; };
+		F6701BC014EBFDA6005BB528 /* tabmap.png in Resources */ = {isa = PBXBuildFile; fileRef = F6701BBE14EBFDA6005BB528 /* tabmap.png */; };
+		F6701BC114EBFDA6005BB528 /* tabmap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6701BBF14EBFDA6005BB528 /* tabmap@2x.png */; };
+		F6701BC814EC00E2005BB528 /* tabstau.png in Resources */ = {isa = PBXBuildFile; fileRef = F6701BC614EC00E2005BB528 /* tabstau.png */; };
+		F6701BC914EC00E2005BB528 /* tabstau@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6701BC714EC00E2005BB528 /* tabstau@2x.png */; };
+		F6701BCC14EC018A005BB528 /* tabcam.png in Resources */ = {isa = PBXBuildFile; fileRef = F6701BCA14EC018A005BB528 /* tabcam.png */; };
+		F6701BCD14EC018A005BB528 /* tabcam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6701BCB14EC018A005BB528 /* tabcam@2x.png */; };
+		F6AC2C5414F0D5C1004815B7 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2C5314F0D5C1004815B7 /* Channel.m */; };
+		F6AC2C5914F0F989004815B7 /* MeldungsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2C5714F0F989004815B7 /* MeldungsViewController.m */; };
+		F6AC2C5A14F0F989004815B7 /* MeldungsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C5814F0F989004815B7 /* MeldungsViewController.xib */; };
+		F6AC2C6114F16295004815B7 /* backmeld.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C5F14F16295004815B7 /* backmeld.png */; };
+		F6AC2C6214F16295004815B7 /* backmeld@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6014F16295004815B7 /* backmeld@2x.png */; };
+		F6AC2C6414F1639C004815B7 /* icon2X.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6314F1639C004815B7 /* icon2X.png */; };
+		F6AC2C6614F1639F004815B7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6514F1639E004815B7 /* Icon.png */; };
+		F6AC2C6814F18409004815B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6714F18409004815B7 /* Default.png */; };
+		F6AC2C6A14F1840D004815B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6914F1840D004815B7 /* Default@2x.png */; };
+		F6AC2C7114F1886B004815B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AC2C7014F1886B004815B7 /* SystemConfiguration.framework */; };
+		F6D742D714ED9E12006B3E8F /* newcam.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D514ED9E12006B3E8F /* newcam.png */; };
+		F6D742D814ED9E12006B3E8F /* newcam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D614ED9E12006B3E8F /* newcam@2x.png */; };
+		F6D742DA14ED9F27006B3E8F /* refe.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D914ED9F27006B3E8F /* refe.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F64346D314EC5D0100D20D9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F64346D614EC5EB800D20D9F /* camDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camDatabase.h; sourceTree = "<group>"; };
+		F64346D714EC5EB800D20D9F /* camDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = camDatabase.m; sourceTree = "<group>"; };
+		F64346D914EC5FBC00D20D9F /* camPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camPoint.h; sourceTree = "<group>"; };
+		F64346DA14EC5FBC00D20D9F /* camPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = camPoint.m; sourceTree = "<group>"; };
+		F6444CA214ED5EC700FEA283 /* camViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camViewer.h; sourceTree = "<group>"; };
+		F6444CA314ED5EC700FEA283 /* camViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = camViewer.m; sourceTree = "<group>"; };
+		F6444CA414ED5EC700FEA283 /* camViewer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = camViewer.xib; sourceTree = "<group>"; };
+		F64F339014EE983F002B7181 /* meldung.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meldung.h; sourceTree = "<group>"; };
+		F64F339114EE983F002B7181 /* meldung.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meldung.m; sourceTree = "<group>"; };
+		F64F339314EE98A0002B7181 /* rssParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rssParser.h; sourceTree = "<group>"; };
+		F64F339414EE98A0002B7181 /* rssParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rssParser.m; sourceTree = "<group>"; };
+		F6701B9714EBF04F005BB528 /* HannoverCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HannoverCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6701B9B14EBF04F005BB528 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F6701B9D14EBF04F005BB528 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6701B9F14EBF04F005BB528 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6701BA314EBF04F005BB528 /* HannoverCam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HannoverCam-Info.plist"; sourceTree = "<group>"; };
+		F6701BA514EBF04F005BB528 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6701BA714EBF04F005BB528 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6701BA914EBF04F005BB528 /* HannoverCam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HannoverCam-Prefix.pch"; sourceTree = "<group>"; };
+		F6701BAA14EBF04F005BB528 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6701BAB14EBF04F005BB528 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6701BAD14EBF04F005BB528 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6701BAE14EBF04F005BB528 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F6701BB114EBF04F005BB528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F6701BB814EBF38E005BB528 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		F6701BB914EBF38E005BB528 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		F6701BBB14EBF3B0005BB528 /* RSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSViewController.h; sourceTree = "<group>"; };
+		F6701BBC14EBF3B0005BB528 /* RSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSViewController.m; sourceTree = "<group>"; };
+		F6701BBE14EBFDA6005BB528 /* tabmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabmap.png; sourceTree = "<group>"; };
+		F6701BBF14EBFDA6005BB528 /* tabmap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabmap@2x.png"; sourceTree = "<group>"; };
+		F6701BC614EC00E2005BB528 /* tabstau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabstau.png; sourceTree = "<group>"; };
+		F6701BC714EC00E2005BB528 /* tabstau@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabstau@2x.png"; sourceTree = "<group>"; };
+		F6701BCA14EC018A005BB528 /* tabcam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabcam.png; sourceTree = "<group>"; };
+		F6701BCB14EC018A005BB528 /* tabcam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabcam@2x.png"; sourceTree = "<group>"; };
+		F6AC2C5214F0D5C1004815B7 /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		F6AC2C5314F0D5C1004815B7 /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		F6AC2C5614F0F989004815B7 /* MeldungsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeldungsViewController.h; sourceTree = "<group>"; };
+		F6AC2C5714F0F989004815B7 /* MeldungsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeldungsViewController.m; sourceTree = "<group>"; };
+		F6AC2C5814F0F989004815B7 /* MeldungsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeldungsViewController.xib; sourceTree = "<group>"; };
+		F6AC2C5F14F16295004815B7 /* backmeld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backmeld.png; sourceTree = "<group>"; };
+		F6AC2C6014F16295004815B7 /* backmeld@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backmeld@2x.png"; sourceTree = "<group>"; };
+		F6AC2C6314F1639C004815B7 /* icon2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2X.png; sourceTree = "<group>"; };
+		F6AC2C6514F1639E004815B7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F6AC2C6714F18409004815B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F6AC2C6914F1840D004815B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F6AC2C7014F1886B004815B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F6D742D514ED9E12006B3E8F /* newcam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newcam.png; sourceTree = "<group>"; };
+		F6D742D614ED9E12006B3E8F /* newcam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newcam@2x.png"; sourceTree = "<group>"; };
+		F6D742D914ED9F27006B3E8F /* refe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refe.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6701B9414EBF04F005BB528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AC2C7114F1886B004815B7 /* SystemConfiguration.framework in Frameworks */,
+				F64346D414EC5D0100D20D9F /* MapKit.framework in Frameworks */,
+				F6701B9C14EBF04F005BB528 /* UIKit.framework in Frameworks */,
+				F6701B9E14EBF04F005BB528 /* Foundation.framework in Frameworks */,
+				F6701BA014EBF04F005BB528 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6701B8C14EBF04F005BB528 = {
+			isa = PBXGroup;
+			children = (
+				F6701BA114EBF04F005BB528 /* HannoverCam */,
+				F6701B9A14EBF04F005BB528 /* Frameworks */,
+				F6701B9814EBF04F005BB528 /* Products */,
+				F6701BCE14EC0190005BB528 /* pics */,
+			);
+			sourceTree = "<group>";
+		};
+		F6701B9814EBF04F005BB528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6701B9714EBF04F005BB528 /* HannoverCam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6701B9A14EBF04F005BB528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6AC2C7014F1886B004815B7 /* SystemConfiguration.framework */,
+				F64346D314EC5D0100D20D9F /* MapKit.framework */,
+				F6701B9B14EBF04F005BB528 /* UIKit.framework */,
+				F6701B9D14EBF04F005BB528 /* Foundation.framework */,
+				F6701B9F14EBF04F005BB528 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6701BA114EBF04F005BB528 /* HannoverCam */ = {
+			isa = PBXGroup;
+			children = (
+				F6701BAA14EBF04F005BB528 /* AppDelegate.h */,
+				F6701BAB14EBF04F005BB528 /* AppDelegate.m */,
+				F6701BBB14EBF3B0005BB528 /* RSSViewController.h */,
+				F6701BBC14EBF3B0005BB528 /* RSSViewController.m */,
+				F6AC2C5614F0F989004815B7 /* MeldungsViewController.h */,
+				F6AC2C5714F0F989004815B7 /* MeldungsViewController.m */,
+				F6AC2C5814F0F989004815B7 /* MeldungsViewController.xib */,
+				F6701BB814EBF38E005BB528 /* ListViewController.h */,
+				F6701BB914EBF38E005BB528 /* ListViewController.m */,
+				F6701BAD14EBF04F005BB528 /* ViewController.h */,
+				F6701BAE14EBF04F005BB528 /* ViewController.m */,
+				F64346D614EC5EB800D20D9F /* camDatabase.h */,
+				F64346D714EC5EB800D20D9F /* camDatabase.m */,
+				F6444CA214ED5EC700FEA283 /* camViewer.h */,
+				F6444CA314ED5EC700FEA283 /* camViewer.m */,
+				F6444CA414ED5EC700FEA283 /* camViewer.xib */,
+				F64F339014EE983F002B7181 /* meldung.h */,
+				F64F339114EE983F002B7181 /* meldung.m */,
+				F6AC2C5214F0D5C1004815B7 /* Channel.h */,
+				F6AC2C5314F0D5C1004815B7 /* Channel.m */,
+				F64F339314EE98A0002B7181 /* rssParser.h */,
+				F64F339414EE98A0002B7181 /* rssParser.m */,
+				F64346D914EC5FBC00D20D9F /* camPoint.h */,
+				F64346DA14EC5FBC00D20D9F /* camPoint.m */,
+				F6701BB014EBF04F005BB528 /* ViewController.xib */,
+				F6701BA214EBF04F005BB528 /* Supporting Files */,
+			);
+			path = HannoverCam;
+			sourceTree = "<group>";
+		};
+		F6701BA214EBF04F005BB528 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6701BA314EBF04F005BB528 /* HannoverCam-Info.plist */,
+				F6701BA414EBF04F005BB528 /* InfoPlist.strings */,
+				F6701BA714EBF04F005BB528 /* main.m */,
+				F6701BA914EBF04F005BB528 /* HannoverCam-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6701BCE14EC0190005BB528 /* pics */ = {
+			isa = PBXGroup;
+			children = (
+				F6AC2C6514F1639E004815B7 /* Icon.png */,
+				F6AC2C6314F1639C004815B7 /* icon2X.png */,
+				F6AC2C6914F1840D004815B7 /* Default@2x.png */,
+				F6AC2C6714F18409004815B7 /* Default.png */,
+				F6AC2C5F14F16295004815B7 /* backmeld.png */,
+				F6AC2C6014F16295004815B7 /* backmeld@2x.png */,
+				F6D742D914ED9F27006B3E8F /* refe.png */,
+				F6D742D514ED9E12006B3E8F /* newcam.png */,
+				F6D742D614ED9E12006B3E8F /* newcam@2x.png */,
+				F6701BBE14EBFDA6005BB528 /* tabmap.png */,
+				F6701BBF14EBFDA6005BB528 /* tabmap@2x.png */,
+				F6701BC614EC00E2005BB528 /* tabstau.png */,
+				F6701BC714EC00E2005BB528 /* tabstau@2x.png */,
+				F6701BCA14EC018A005BB528 /* tabcam.png */,
+				F6701BCB14EC018A005BB528 /* tabcam@2x.png */,
+			);
+			name = pics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6701B9614EBF04F005BB528 /* HannoverCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6701BB514EBF04F005BB528 /* Build configuration list for PBXNativeTarget "HannoverCam" */;
+			buildPhases = (
+				F6701B9314EBF04F005BB528 /* Sources */,
+				F6701B9414EBF04F005BB528 /* Frameworks */,
+				F6701B9514EBF04F005BB528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HannoverCam;
+			productName = HannoverCam;
+			productReference = F6701B9714EBF04F005BB528 /* HannoverCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6701B8E14EBF04F005BB528 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Tobias Bischoff";
+			};
+			buildConfigurationList = F6701B9114EBF04F005BB528 /* Build configuration list for PBXProject "HannoverCam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6701B8C14EBF04F005BB528;
+			productRefGroup = F6701B9814EBF04F005BB528 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6701B9614EBF04F005BB528 /* HannoverCam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6701B9514EBF04F005BB528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6701BA614EBF04F005BB528 /* InfoPlist.strings in Resources */,
+				F6701BB214EBF04F005BB528 /* ViewController.xib in Resources */,
+				F6701BC014EBFDA6005BB528 /* tabmap.png in Resources */,
+				F6701BC114EBFDA6005BB528 /* tabmap@2x.png in Resources */,
+				F6701BC814EC00E2005BB528 /* tabstau.png in Resources */,
+				F6701BC914EC00E2005BB528 /* tabstau@2x.png in Resources */,
+				F6701BCC14EC018A005BB528 /* tabcam.png in Resources */,
+				F6701BCD14EC018A005BB528 /* tabcam@2x.png in Resources */,
+				F6444CA614ED5EC700FEA283 /* camViewer.xib in Resources */,
+				F6D742D714ED9E12006B3E8F /* newcam.png in Resources */,
+				F6D742D814ED9E12006B3E8F /* newcam@2x.png in Resources */,
+				F6D742DA14ED9F27006B3E8F /* refe.png in Resources */,
+				F6AC2C5A14F0F989004815B7 /* MeldungsViewController.xib in Resources */,
+				F6AC2C6114F16295004815B7 /* backmeld.png in Resources */,
+				F6AC2C6214F16295004815B7 /* backmeld@2x.png in Resources */,
+				F6AC2C6414F1639C004815B7 /* icon2X.png in Resources */,
+				F6AC2C6614F1639F004815B7 /* Icon.png in Resources */,
+				F6AC2C6814F18409004815B7 /* Default.png in Resources */,
+				F6AC2C6A14F1840D004815B7 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6701B9314EBF04F005BB528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6701BA814EBF04F005BB528 /* main.m in Sources */,
+				F6701BAC14EBF04F005BB528 /* AppDelegate.m in Sources */,
+				F6701BAF14EBF04F005BB528 /* ViewController.m in Sources */,
+				F6701BBA14EBF38E005BB528 /* ListViewController.m in Sources */,
+				F6701BBD14EBF3B0005BB528 /* RSSViewController.m in Sources */,
+				F64346D814EC5EB800D20D9F /* camDatabase.m in Sources */,
+				F64346DB14EC5FBC00D20D9F /* camPoint.m in Sources */,
+				F6444CA514ED5EC700FEA283 /* camViewer.m in Sources */,
+				F64F339214EE983F002B7181 /* meldung.m in Sources */,
+				F64F339514EE98A0002B7181 /* rssParser.m in Sources */,
+				F6AC2C5414F0D5C1004815B7 /* Channel.m in Sources */,
+				F6AC2C5914F0F989004815B7 /* MeldungsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6701BA414EBF04F005BB528 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6701BA514EBF04F005BB528 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6701BB014EBF04F005BB528 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6701BB114EBF04F005BB528 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6701BB314EBF04F005BB528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6701BB414EBF04F005BB528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6701BB614EBF04F005BB528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HannoverCam/HannoverCam-Prefix.pch";
+				INFOPLIST_FILE = "HannoverCam/HannoverCam-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6701BB714EBF04F005BB528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HannoverCam/HannoverCam-Prefix.pch";
+				INFOPLIST_FILE = "HannoverCam/HannoverCam-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6701B9114EBF04F005BB528 /* Build configuration list for PBXProject "HannoverCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6701BB314EBF04F005BB528 /* Debug */,
+				F6701BB414EBF04F005BB528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6701BB514EBF04F005BB528 /* Build configuration list for PBXNativeTarget "HannoverCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6701BB614EBF04F005BB528 /* Debug */,
+				F6701BB714EBF04F005BB528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6701B8E14EBF04F005BB528 /* Project object */;
+}
