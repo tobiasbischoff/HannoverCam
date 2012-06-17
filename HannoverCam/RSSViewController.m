@@ -67,7 +67,7 @@ self = [super initWithStyle:UITableViewStylePlain];
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
         
-    return [[rsp feedPosts] count];
+    return [[rsp reversedFeedPosts] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -85,7 +85,7 @@ self = [super initWithStyle:UITableViewStylePlain];
     }
     
     //text der zelle mit der beschreibung der meldung füllen
-    meldung * m  = [[rsp feedPosts]objectAtIndex:[indexPath row]];
+    meldung * m  = [[rsp reversedFeedPosts]objectAtIndex:[indexPath row]];
     NSString *temptitle = [[m title] stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     temptitle = [temptitle stringByReplacingOccurrencesOfString:@" " withString:@""];
     if ([temptitle isEqualToString:@""]) [m setTitle:@"Meldung ohne Titel"]; 
@@ -101,7 +101,7 @@ self = [super initWithStyle:UITableViewStylePlain];
     //reihe wurde getappt..detail viewcontroller erstellen und auf den stack legen.
     MeldungsViewController *mvc = [[MeldungsViewController alloc] init];
     
-    [mvc setDisplaymeldung:[[rsp feedPosts]objectAtIndex:[indexPath row]]];
+    [mvc setDisplaymeldung:[[rsp reversedFeedPosts]objectAtIndex:[indexPath row]]];
     
     [[self navigationController] pushViewController:mvc animated:YES];
 }

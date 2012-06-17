@@ -9,6 +9,7 @@
 #import "camViewer.h"
 #import <SystemConfiguration/SCNetworkReachability.h>
 #include <netinet/in.h>
+#include "Appirater.h"
 
 @implementation camViewer
 @synthesize displayurl;
@@ -70,7 +71,7 @@
         
 		return;
 	}
-    
+    [Appirater userDidSignificantEvent:YES];
     NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:displayurl] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30.0];
     [webview setDelegate:self];
 	[webview loadRequest: theRequest];

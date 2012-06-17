@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61AE570158DD73C0002D9A5 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = F61AE56F158DD73C0002D9A5 /* Appirater.m */; };
+		F61AE574158DD7700002D9A5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F61AE576158DD7700002D9A5 /* Localizable.strings */; };
+		F61AE579158DD8720002D9A5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61AE578158DD8720002D9A5 /* CFNetwork.framework */; };
 		F64346D414EC5D0100D20D9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64346D314EC5D0100D20D9F /* MapKit.framework */; };
 		F64346D814EC5EB800D20D9F /* camDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F64346D714EC5EB800D20D9F /* camDatabase.m */; };
 		F64346DB14EC5FBC00D20D9F /* camPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F64346DA14EC5FBC00D20D9F /* camPoint.m */; };
@@ -14,6 +17,7 @@
 		F6444CA614ED5EC700FEA283 /* camViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6444CA414ED5EC700FEA283 /* camViewer.xib */; };
 		F64F339214EE983F002B7181 /* meldung.m in Sources */ = {isa = PBXBuildFile; fileRef = F64F339114EE983F002B7181 /* meldung.m */; };
 		F64F339514EE98A0002B7181 /* rssParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F64F339414EE98A0002B7181 /* rssParser.m */; };
+		F6653822157A27F300C7C2D1 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = F6653821157A27F300C7C2D1 /* TODO */; };
 		F6701B9C14EBF04F005BB528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6701B9B14EBF04F005BB528 /* UIKit.framework */; };
 		F6701B9E14EBF04F005BB528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6701B9D14EBF04F005BB528 /* Foundation.framework */; };
 		F6701BA014EBF04F005BB528 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6701B9F14EBF04F005BB528 /* CoreGraphics.framework */; };
@@ -46,6 +50,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61AE56E158DD73C0002D9A5 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		F61AE56F158DD73C0002D9A5 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
+		F61AE575158DD7700002D9A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F61AE577158DD7750002D9A5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F61AE578158DD8720002D9A5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F64346D314EC5D0100D20D9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F64346D614EC5EB800D20D9F /* camDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camDatabase.h; sourceTree = "<group>"; };
 		F64346D714EC5EB800D20D9F /* camDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = camDatabase.m; sourceTree = "<group>"; };
@@ -58,6 +67,7 @@
 		F64F339114EE983F002B7181 /* meldung.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meldung.m; sourceTree = "<group>"; };
 		F64F339314EE98A0002B7181 /* rssParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rssParser.h; sourceTree = "<group>"; };
 		F64F339414EE98A0002B7181 /* rssParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rssParser.m; sourceTree = "<group>"; };
+		F6653821157A27F300C7C2D1 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		F6701B9714EBF04F005BB528 /* HannoverCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HannoverCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6701B9B14EBF04F005BB528 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6701B9D14EBF04F005BB528 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61AE579158DD8720002D9A5 /* CFNetwork.framework in Frameworks */,
 				F6AC2C7114F1886B004815B7 /* SystemConfiguration.framework in Frameworks */,
 				F64346D414EC5D0100D20D9F /* MapKit.framework in Frameworks */,
 				F6701B9C14EBF04F005BB528 /* UIKit.framework in Frameworks */,
@@ -117,6 +128,8 @@
 		F6701B8C14EBF04F005BB528 = {
 			isa = PBXGroup;
 			children = (
+				F61AE576158DD7700002D9A5 /* Localizable.strings */,
+				F6653821157A27F300C7C2D1 /* TODO */,
 				F6701BA114EBF04F005BB528 /* HannoverCam */,
 				F6701B9A14EBF04F005BB528 /* Frameworks */,
 				F6701B9814EBF04F005BB528 /* Products */,
@@ -135,6 +148,9 @@
 		F6701B9A14EBF04F005BB528 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F61AE578158DD8720002D9A5 /* CFNetwork.framework */,
+				F61AE56E158DD73C0002D9A5 /* Appirater.h */,
+				F61AE56F158DD73C0002D9A5 /* Appirater.m */,
 				F6AC2C7014F1886B004815B7 /* SystemConfiguration.framework */,
 				F64346D314EC5D0100D20D9F /* MapKit.framework */,
 				F6701B9B14EBF04F005BB528 /* UIKit.framework */,
@@ -245,6 +261,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = F6701B8C14EBF04F005BB528;
 			productRefGroup = F6701B9814EBF04F005BB528 /* Products */;
@@ -280,6 +297,8 @@
 				F6AC2C6614F1639F004815B7 /* Icon.png in Resources */,
 				F6AC2C6814F18409004815B7 /* Default.png in Resources */,
 				F6AC2C6A14F1840D004815B7 /* Default@2x.png in Resources */,
+				F6653822157A27F300C7C2D1 /* TODO in Resources */,
+				F61AE574158DD7700002D9A5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +321,22 @@
 				F64F339514EE98A0002B7181 /* rssParser.m in Sources */,
 				F6AC2C5414F0D5C1004815B7 /* Channel.m in Sources */,
 				F6AC2C5914F0F989004815B7 /* MeldungsViewController.m in Sources */,
+				F61AE570158DD73C0002D9A5 /* Appirater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F61AE576158DD7700002D9A5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F61AE575158DD7700002D9A5 /* en */,
+				F61AE577158DD7750002D9A5 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F6701BA414EBF04F005BB528 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "RSSViewController.h"
 #import "ListViewController.h"
+#import "Appirater.h"
 
 @implementation AppDelegate
 
@@ -41,7 +42,7 @@
     
     
     [[self window] setRootViewController:tabBarController];
-    
+    [Appirater appLaunched:YES];
     NSLog(@"finished launching");
     
     [self.window makeKeyAndVisible];
@@ -69,6 +70,7 @@
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
+    [Appirater appEnteredForeground:YES];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

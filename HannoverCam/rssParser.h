@@ -27,4 +27,7 @@
 
 @property (nonatomic, retain) NSMutableArray *feedPosts;
 
+- (NSArray *)reversedFeedPosts;
+
+
 @end

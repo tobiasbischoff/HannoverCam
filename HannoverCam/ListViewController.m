@@ -19,6 +19,9 @@
         //und einen navbar title definieren
         [[self navigationItem] setTitle:@"Kameraliste"];
         
+        //camera datenbank erstellen
+        camd = [[camDatabase alloc] init];
+        
         //Tabbar config
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Kameras"];
@@ -33,7 +36,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    camDatabase * camd = [[camDatabase alloc] init];
     
     return [[camd  cam] count];
 }
@@ -52,7 +54,7 @@
         [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
         
     }
-    camDatabase * camd = [[camDatabase alloc] init];
+    
     //text der zelle mit der beschreibung der possession füllen
     camPoint *c  = [[camd cam]objectAtIndex:[indexPath row]];
     
@@ -70,7 +72,7 @@
     camViewer *cvc = [[camViewer alloc] init];
     
     
-    camDatabase * camd = [[camDatabase alloc] init];
+
     camPoint *c  = [[camd cam]objectAtIndex:[indexPath row]];
     [cvc setDisplayurl:[c url]];
     

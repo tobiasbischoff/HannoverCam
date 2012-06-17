@@ -11,6 +11,9 @@
 #import "camPoint.h"
 #import "camViewer.h"
 
-@interface ListViewController : UITableViewController
+@interface ListViewController : UITableViewController {
+    
+    camDatabase * camd;
+}
 
 @end

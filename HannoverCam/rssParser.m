@@ -35,6 +35,15 @@ static NSString * const kItemElementName = @"item";
     
 }
 
+- (NSArray *)reversedFeedPosts {
+    
+    
+    NSArray * reversedArray = [[NSMutableArray alloc] init];
+    reversedArray = [[feedPosts reverseObjectEnumerator] allObjects];
+    
+    return reversedArray;
+}
+
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName 
   namespaceURI:(NSString *)namespaceURI 
  qualifiedName:(NSString *)qName 
