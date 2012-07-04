@@ -20,6 +20,8 @@ static NSString * const kItemElementName = @"item";
     self = [super init];
     
     feedURL = [[NSURL alloc] initWithString:@"http://www.vmz-niedersachsen.de/vwd/InfoRss.xml"];
+    //feedURL = [[NSURL alloc] initWithString:@"http://www.stadt-koeln.de/externe-dienste/rss/verkehrskalender.xml"];
+    
     feedPosts = [[NSMutableArray alloc] init];
     [self startparsing];
     return self;
@@ -109,6 +111,8 @@ static NSString * const kItemElementName = @"item";
     NSLog(@"RSS Feed Parse Error: %@", info);
     meldung * dummy = [[meldung alloc] initWithTitle:@"Nicht verfügbar" desc:@"Zur Zeit ist der Meldungsdienst nicht verfügbar." pdate:@"aktuell"];
     [feedPosts addObject:dummy];
+    NSNotification *note = [NSNotification notificationWithName:@"rss" object:self];
+    [[NSNotificationCenter defaultCenter] postNotification:note];
 }
 
 -(void) parserDidStartDocument:(NSXMLParser *)parser {
@@ -118,7 +122,8 @@ static NSString * const kItemElementName = @"item";
 
 -(void) parserDidEndDocument: (NSXMLParser *)parser {
 	NSLog(@"parserDidEndDocument mit objekten %d", [feedPosts count]); 
-    
+    NSNotification *note = [NSNotification notificationWithName:@"rss" object:self];
+    [[NSNotificationCenter defaultCenter] postNotification:note];
 }
 
 

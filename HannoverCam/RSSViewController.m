@@ -34,6 +34,10 @@ self = [super initWithStyle:UITableViewStylePlain];
         [activityView setAutoresizingMask:(UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin)];
         loadingView = [[UIBarButtonItem alloc] initWithCustomView:activityView];
         
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(ladenFertig:) name:@"rss" object:nil];
+
+        
         [[self navigationItem] setRightBarButtonItem:reloadknopf];
         rsp = [[rssParser alloc] init];
         
@@ -48,13 +52,18 @@ self = [super initWithStyle:UITableViewStylePlain];
 {
     [[self navigationItem] setRightBarButtonItem:loadingView];
     [activityView startAnimating];
-    [rsp startparsing];
+    [rsp performSelectorInBackground:@selector(startparsing) withObject:nil];
+    
+   
+}
+
+- (void)ladenFertig:(NSNotification *)note;
+{
     [[self tableView] reloadData];
     [activityView stopAnimating];
     [[self navigationItem] setRightBarButtonItem:reloadknopf];
+
 }
-
-
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
