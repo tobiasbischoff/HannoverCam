@@ -53,7 +53,7 @@ self = [super initWithStyle:UITableViewStylePlain];
     [[self navigationItem] setRightBarButtonItem:loadingView];
     [activityView startAnimating];
     [rsp performSelectorInBackground:@selector(startparsing) withObject:nil];
-    
+    [[self tableView] setUserInteractionEnabled:FALSE];
    
 }
 
@@ -62,6 +62,7 @@ self = [super initWithStyle:UITableViewStylePlain];
     [[self tableView] reloadData];
     [activityView stopAnimating];
     [[self navigationItem] setRightBarButtonItem:reloadknopf];
+    [[self tableView] setUserInteractionEnabled:TRUE];
 
 }
 

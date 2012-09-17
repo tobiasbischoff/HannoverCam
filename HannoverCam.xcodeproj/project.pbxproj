@@ -47,6 +47,9 @@
 		F6D742D714ED9E12006B3E8F /* newcam.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D514ED9E12006B3E8F /* newcam.png */; };
 		F6D742D814ED9E12006B3E8F /* newcam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D614ED9E12006B3E8F /* newcam@2x.png */; };
 		F6D742DA14ED9F27006B3E8F /* refe.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D914ED9F27006B3E8F /* refe.png */; };
+		F6DED9361601F11400AE8D51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DED9351601F11400AE8D51 /* Default-568h@2x.png */; };
+		F6DED93E1602470D00AE8D51 /* CamAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DED93D1602470D00AE8D51 /* CamAnnotation.m */; };
+		F6DED9401602478D00AE8D51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DED93F1602478D00AE8D51 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +109,10 @@
 		F6D742D514ED9E12006B3E8F /* newcam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newcam.png; sourceTree = "<group>"; };
 		F6D742D614ED9E12006B3E8F /* newcam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newcam@2x.png"; sourceTree = "<group>"; };
 		F6D742D914ED9F27006B3E8F /* refe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refe.png; sourceTree = "<group>"; };
+		F6DED9351601F11400AE8D51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F6DED93C1602470D00AE8D51 /* CamAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamAnnotation.h; sourceTree = "<group>"; };
+		F6DED93D1602470D00AE8D51 /* CamAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamAnnotation.m; sourceTree = "<group>"; };
+		F6DED93F1602478D00AE8D51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DED9401602478D00AE8D51 /* CoreLocation.framework in Frameworks */,
 				F61AE579158DD8720002D9A5 /* CFNetwork.framework in Frameworks */,
 				F6AC2C7114F1886B004815B7 /* SystemConfiguration.framework in Frameworks */,
 				F64346D414EC5D0100D20D9F /* MapKit.framework in Frameworks */,
@@ -148,6 +156,7 @@
 		F6701B9A14EBF04F005BB528 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6DED93F1602478D00AE8D51 /* CoreLocation.framework */,
 				F61AE578158DD8720002D9A5 /* CFNetwork.framework */,
 				F61AE56E158DD73C0002D9A5 /* Appirater.h */,
 				F61AE56F158DD73C0002D9A5 /* Appirater.m */,
@@ -189,6 +198,8 @@
 				F64346DA14EC5FBC00D20D9F /* camPoint.m */,
 				F6701BB014EBF04F005BB528 /* ViewController.xib */,
 				F6701BA214EBF04F005BB528 /* Supporting Files */,
+				F6DED93C1602470D00AE8D51 /* CamAnnotation.h */,
+				F6DED93D1602470D00AE8D51 /* CamAnnotation.m */,
 			);
 			path = HannoverCam;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				F6AC2C6514F1639E004815B7 /* Icon.png */,
+				F6DED9351601F11400AE8D51 /* Default-568h@2x.png */,
 				F6AC2C6314F1639C004815B7 /* icon2X.png */,
 				F6AC2C6914F1840D004815B7 /* Default@2x.png */,
 				F6AC2C6714F18409004815B7 /* Default.png */,
@@ -252,7 +264,7 @@
 		F6701B8E14EBF04F005BB528 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Tobias Bischoff";
 			};
 			buildConfigurationList = F6701B9114EBF04F005BB528 /* Build configuration list for PBXProject "HannoverCam" */;
@@ -299,6 +311,7 @@
 				F6AC2C6A14F1840D004815B7 /* Default@2x.png in Resources */,
 				F6653822157A27F300C7C2D1 /* TODO in Resources */,
 				F61AE574158DD7700002D9A5 /* Localizable.strings in Resources */,
+				F6DED9361601F11400AE8D51 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +335,7 @@
 				F6AC2C5414F0D5C1004815B7 /* Channel.m in Sources */,
 				F6AC2C5914F0F989004815B7 /* MeldungsViewController.m in Sources */,
 				F61AE570158DD73C0002D9A5 /* Appirater.m in Sources */,
+				F6DED93E1602470D00AE8D51 /* CamAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

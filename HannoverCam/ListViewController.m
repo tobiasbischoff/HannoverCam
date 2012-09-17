@@ -20,7 +20,7 @@
         [[self navigationItem] setTitle:@"Kameraliste"];
         
         //camera datenbank erstellen
-        camd = [[camDatabase alloc] init];
+        camd = [camDatabase defaultDB];
         
         //Tabbar config
         UITabBarItem *tbi = [self tabBarItem];
