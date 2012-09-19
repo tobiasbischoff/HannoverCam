@@ -14,6 +14,7 @@
 @interface RSSViewController : UITableViewController <UITableViewDelegate>
 {
     rssParser * rsp;
+    NSArray *feed;
     UIActivityIndicatorView * activityView;
     UIBarButtonItem *loadingView;
      UIBarButtonItem * reloadknopf;

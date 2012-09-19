@@ -27,6 +27,7 @@
         [tbi setTitle:@"Karte"];
         UIImage *i = [UIImage imageNamed:@"tabmap.png"];
         [tbi setImage:i];
+        //singelton der kamera datenbank holen
         camd = [camDatabase defaultDB];
     
     }
@@ -52,17 +53,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //Map konfigurieren
     [map setShowsUserLocation:YES];
     [map setDelegate:self];
+    //hannover 52.388592 9.728737
+    CLLocationCoordinate2D loc = {.latitude =  52.388592, .longitude =  9.728737};
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(loc, 28000, 18000);
+    [map setRegion:region animated:NO];
+    
+    //annotations laden
     cAns = [[NSMutableArray alloc] init];
     for (camPoint *c in [camd cam])
         [cAns addObject:[c cannotation]];
-    //hannover 52.388592 9.728737
-    CLLocationCoordinate2D loc = {.latitude =  52.388592, .longitude =  9.728737};
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(loc, 15000, 16000);
-    [map setRegion:region animated:NO];
-    [map setShowsUserLocation:YES];
     
 }
 
@@ -91,10 +94,14 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapv viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    //wird aufgerufen wenn die map eine annotation braucht
+    
+    //den blauen punkt wollen wir nicht verändern
     if ([annotation isKindOfClass:[MKUserLocation class]]){
         return nil;
     }
     
+    //re-use kram wie bei einem tableview
     static NSString *annotationViewReuseIdentifier = @"annotationViewReuseIdentifier";
     
     MKAnnotationView *annotationView = (MKAnnotationView *)[mapv dequeueReusableAnnotationViewWithIdentifier:annotationViewReuseIdentifier];
@@ -104,18 +111,19 @@
         annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationViewReuseIdentifier];
     }
     
+    //detail button erstellen und mit einem tag versehen der klar macht welche kamera er später aufruft.
     UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     [button addTarget:self action:@selector(openViewer:) forControlEvents:UIControlEventTouchUpInside];
     button.frame = CGRectMake(0, 0, 23, 23);
     CamAnnotation *current = annotation;
     button.tag = current.btnID;
-    
     annotationView.rightCalloutAccessoryView = button;
   
+    //label brauchen wir auch
     UILabel * desc = [[UILabel alloc] init];
-  
     annotationView.leftCalloutAccessoryView = desc;
     
+    //kleines kamera bild setzten und annotation zuweisen
     annotationView.image = [UIImage imageNamed:@"newcam.png"];
     annotationView.annotation = annotation;
     annotationView.canShowCallout = TRUE;
@@ -141,6 +149,7 @@
 
 - (IBAction)openViewer:(UIButton *)sender {
     
+    //Kamera bild anzeigen, welches weiss dass sender.tag
     camViewer *cvc = [[camViewer alloc] init];
     camPoint *c  = [[camd cam]objectAtIndex:sender.tag];
     [cvc setDisplayurl:[c url]];
@@ -149,8 +158,8 @@
 
 - (IBAction)resetMap:(id)sender {
     
+    //Map zentrieren
     CLLocationCoordinate2D loc = {.latitude =  52.388592, .longitude =  9.728737};
-    
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(loc, 15000, 16000);
     [map setRegion:region animated:YES];
   
