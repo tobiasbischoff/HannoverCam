@@ -27,7 +27,7 @@
         [activityView sizeToFit];
         [activityView setAutoresizingMask:(UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin)];
         loadingView = [[UIBarButtonItem alloc] initWithCustomView:activityView];
-        [[self view] setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
+       // [[self view] setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
         
     }
     return self;

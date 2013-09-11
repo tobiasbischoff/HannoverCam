@@ -22,7 +22,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-      [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"backmeld.png"]]];
+      //[[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"backmeld.png"]]];
     }
     return self;
 }

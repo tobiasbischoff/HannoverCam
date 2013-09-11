@@ -37,19 +37,12 @@
 		F6AC2C5414F0D5C1004815B7 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2C5314F0D5C1004815B7 /* Channel.m */; };
 		F6AC2C5914F0F989004815B7 /* MeldungsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2C5714F0F989004815B7 /* MeldungsViewController.m */; };
 		F6AC2C5A14F0F989004815B7 /* MeldungsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C5814F0F989004815B7 /* MeldungsViewController.xib */; };
-		F6AC2C6114F16295004815B7 /* backmeld.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C5F14F16295004815B7 /* backmeld.png */; };
-		F6AC2C6214F16295004815B7 /* backmeld@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6014F16295004815B7 /* backmeld@2x.png */; };
-		F6AC2C6414F1639C004815B7 /* icon2X.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6314F1639C004815B7 /* icon2X.png */; };
-		F6AC2C6614F1639F004815B7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6514F1639E004815B7 /* Icon.png */; };
-		F6AC2C6814F18409004815B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6714F18409004815B7 /* Default.png */; };
-		F6AC2C6A14F1840D004815B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC2C6914F1840D004815B7 /* Default@2x.png */; };
 		F6AC2C7114F1886B004815B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AC2C7014F1886B004815B7 /* SystemConfiguration.framework */; };
 		F6D742D714ED9E12006B3E8F /* newcam.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D514ED9E12006B3E8F /* newcam.png */; };
 		F6D742D814ED9E12006B3E8F /* newcam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D614ED9E12006B3E8F /* newcam@2x.png */; };
-		F6D742DA14ED9F27006B3E8F /* refe.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D742D914ED9F27006B3E8F /* refe.png */; };
-		F6DED9361601F11400AE8D51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DED9351601F11400AE8D51 /* Default-568h@2x.png */; };
 		F6DED93E1602470D00AE8D51 /* CamAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DED93D1602470D00AE8D51 /* CamAnnotation.m */; };
 		F6DED9401602478D00AE8D51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DED93F1602478D00AE8D51 /* CoreLocation.framework */; };
+		F6EB371617E0EA90005F2D79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EB371517E0EA90005F2D79 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,20 +92,13 @@
 		F6AC2C5614F0F989004815B7 /* MeldungsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeldungsViewController.h; sourceTree = "<group>"; };
 		F6AC2C5714F0F989004815B7 /* MeldungsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeldungsViewController.m; sourceTree = "<group>"; };
 		F6AC2C5814F0F989004815B7 /* MeldungsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeldungsViewController.xib; sourceTree = "<group>"; };
-		F6AC2C5F14F16295004815B7 /* backmeld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backmeld.png; sourceTree = "<group>"; };
-		F6AC2C6014F16295004815B7 /* backmeld@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backmeld@2x.png"; sourceTree = "<group>"; };
-		F6AC2C6314F1639C004815B7 /* icon2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2X.png; sourceTree = "<group>"; };
-		F6AC2C6514F1639E004815B7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		F6AC2C6714F18409004815B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		F6AC2C6914F1840D004815B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F6AC2C7014F1886B004815B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F6D742D514ED9E12006B3E8F /* newcam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newcam.png; sourceTree = "<group>"; };
 		F6D742D614ED9E12006B3E8F /* newcam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newcam@2x.png"; sourceTree = "<group>"; };
-		F6D742D914ED9F27006B3E8F /* refe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refe.png; sourceTree = "<group>"; };
-		F6DED9351601F11400AE8D51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F6DED93C1602470D00AE8D51 /* CamAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamAnnotation.h; sourceTree = "<group>"; };
 		F6DED93D1602470D00AE8D51 /* CamAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamAnnotation.m; sourceTree = "<group>"; };
 		F6DED93F1602478D00AE8D51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F6EB371517E0EA90005F2D79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +186,7 @@
 				F6701BA214EBF04F005BB528 /* Supporting Files */,
 				F6DED93C1602470D00AE8D51 /* CamAnnotation.h */,
 				F6DED93D1602470D00AE8D51 /* CamAnnotation.m */,
+				F6EB371517E0EA90005F2D79 /* Images.xcassets */,
 			);
 			path = HannoverCam;
 			sourceTree = "<group>";
@@ -218,14 +205,6 @@
 		F6701BCE14EC0190005BB528 /* pics */ = {
 			isa = PBXGroup;
 			children = (
-				F6AC2C6514F1639E004815B7 /* Icon.png */,
-				F6DED9351601F11400AE8D51 /* Default-568h@2x.png */,
-				F6AC2C6314F1639C004815B7 /* icon2X.png */,
-				F6AC2C6914F1840D004815B7 /* Default@2x.png */,
-				F6AC2C6714F18409004815B7 /* Default.png */,
-				F6AC2C5F14F16295004815B7 /* backmeld.png */,
-				F6AC2C6014F16295004815B7 /* backmeld@2x.png */,
-				F6D742D914ED9F27006B3E8F /* refe.png */,
 				F6D742D514ED9E12006B3E8F /* newcam.png */,
 				F6D742D614ED9E12006B3E8F /* newcam@2x.png */,
 				F6701BBE14EBFDA6005BB528 /* tabmap.png */,
@@ -266,6 +245,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Tobias Bischoff";
+				TargetAttributes = {
+					F6701B9614EBF04F005BB528 = {
+						DevelopmentTeam = V6H748967V;
+					};
+				};
 			};
 			buildConfigurationList = F6701B9114EBF04F005BB528 /* Build configuration list for PBXProject "HannoverCam" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -291,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6701BA614EBF04F005BB528 /* InfoPlist.strings in Resources */,
+				F6EB371617E0EA90005F2D79 /* Images.xcassets in Resources */,
 				F6701BB214EBF04F005BB528 /* ViewController.xib in Resources */,
 				F6701BC014EBFDA6005BB528 /* tabmap.png in Resources */,
 				F6701BC114EBFDA6005BB528 /* tabmap@2x.png in Resources */,
@@ -301,17 +286,9 @@
 				F6444CA614ED5EC700FEA283 /* camViewer.xib in Resources */,
 				F6D742D714ED9E12006B3E8F /* newcam.png in Resources */,
 				F6D742D814ED9E12006B3E8F /* newcam@2x.png in Resources */,
-				F6D742DA14ED9F27006B3E8F /* refe.png in Resources */,
 				F6AC2C5A14F0F989004815B7 /* MeldungsViewController.xib in Resources */,
-				F6AC2C6114F16295004815B7 /* backmeld.png in Resources */,
-				F6AC2C6214F16295004815B7 /* backmeld@2x.png in Resources */,
-				F6AC2C6414F1639C004815B7 /* icon2X.png in Resources */,
-				F6AC2C6614F1639F004815B7 /* Icon.png in Resources */,
-				F6AC2C6814F18409004815B7 /* Default.png in Resources */,
-				F6AC2C6A14F1840D004815B7 /* Default@2x.png in Resources */,
 				F6653822157A27F300C7C2D1 /* TODO in Resources */,
 				F61AE574158DD7700002D9A5 /* Localizable.strings in Resources */,
-				F6DED9361601F11400AE8D51 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,11 +395,16 @@
 		F6701BB614EBF04F005BB528 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HannoverCam/HannoverCam-Prefix.pch";
 				INFOPLIST_FILE = "HannoverCam/HannoverCam-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -431,11 +413,16 @@
 		F6701BB714EBF04F005BB528 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HannoverCam/HannoverCam-Prefix.pch";
 				INFOPLIST_FILE = "HannoverCam/HannoverCam-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

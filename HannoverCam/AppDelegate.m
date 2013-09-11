@@ -32,9 +32,9 @@
     UINavigationController * rssnav = [[UINavigationController alloc] initWithRootViewController:rss];
     UINavigationController * mapnav = [[UINavigationController alloc] initWithRootViewController:viewController];
     
-    [[listnav navigationBar] setBarStyle:UIBarStyleBlack];
-    [[rssnav navigationBar] setBarStyle:UIBarStyleBlack];
-    [[mapnav navigationBar] setBarStyle:UIBarStyleBlack];
+    //[[listnav navigationBar] setBarStyle:UIBarStyleBlack];
+    //[[rssnav navigationBar] setBarStyle:UIBarStyleBlack];
+    //[[mapnav navigationBar] setBarStyle:UIBarStyleBlack];
     
     NSArray * vcs = [NSArray arrayWithObjects:mapnav,listnav,rssnav, nil];
     
